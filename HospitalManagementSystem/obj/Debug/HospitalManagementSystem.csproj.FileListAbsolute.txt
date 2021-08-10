@@ -69,3 +69,7 @@ C:\Users\ASUS\Desktop\Hospital Management System\HospitalManagementSystem\obj\De
 C:\Users\ASUS\Desktop\Hospital Management System\HospitalManagementSystem\obj\Debug\HospitalManagementSystem.csproj.CopyComplete
 C:\Users\ASUS\Desktop\Hospital Management System\HospitalManagementSystem\obj\Debug\HospitalManagementSystem.dll
 C:\Users\ASUS\Desktop\Hospital Management System\HospitalManagementSystem\obj\Debug\HospitalManagementSystem.pdb
+C:\Users\ASUS\Desktop\Hospital Management System\HospitalManagementSystem\bin\EntityFramework.dll
+C:\Users\ASUS\Desktop\Hospital Management System\HospitalManagementSystem\bin\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Desktop\Hospital Management System\HospitalManagementSystem\bin\EntityFramework.xml
+C:\Users\ASUS\Desktop\Hospital Management System\HospitalManagementSystem\bin\EntityFramework.SqlServer.xml
