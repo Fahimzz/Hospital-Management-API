@@ -53,13 +53,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppointmentLogRepo.cs" />
     <Compile Include="Appointment.cs">
       <DependentUpon>HMS.tt</DependentUpon>
     </Compile>
     <Compile Include="AppointmentLog.cs">
       <DependentUpon>HMS.tt</DependentUpon>
     </Compile>
-    <Compile Include="Class1.cs" />
+    <Compile Include="AppointmentRepo.cs" />
+    <Compile Include="DoctorRepo.cs" />
+    <Compile Include="LoginRepo.cs" />
+    <Compile Include="PatientRepo.cs" />
+    <Compile Include="ReceptionisRepo.cs" />
     <Compile Include="Doctor.cs">
       <DependentUpon>HMS.tt</DependentUpon>
     </Compile>

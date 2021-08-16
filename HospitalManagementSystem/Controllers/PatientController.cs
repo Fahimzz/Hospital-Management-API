@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BEL;
+using BLL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -9,10 +11,35 @@ namespace HospitalManagementSystem.Controllers
 {
     public class PatientController : ApiController
     {
-        [Route("api/patient/all")]
-        public List<string> GetAll()
+        [Route("api/Patient/GetAll")]
+
+        public List<PatientModel> GetAllPatient()
         {
-            return null;
+            return PatientService.GetAllPatient();
+        }
+
+        [Route("api/Patient/{id}/GetPatientistById")]
+
+        public PatientModel GetPatientById(string id)
+        {
+            return PatientService.GetPatientById(id);
+        }
+       [Route("api/Patient/EditPatient")]
+        public void Edit(PatientModel id)
+        {
+            PatientService.EditPatient(id);
+        }
+        [Route("api/Patient/{id}/Delete")]
+        public void Delete(string id)
+        {
+            PatientService.DeletePatient(id);
+        }
+
+        [Route("api/Patient/GetAllLog")]
+
+        public List<PatientLogModel> GetAllPatientLog()
+        {
+            return PatientService.GetAllPatientLog();
         }
     }
 }

@@ -12,3 +12,5 @@ C:\Users\ASUS\Desktop\Hospital Management System\BLL\obj\Debug\BLL.pdb
 C:\Users\ASUS\Desktop\Hospital Management System\BLL\bin\Debug\EntityFramework.dll
 C:\Users\ASUS\Desktop\Hospital Management System\BLL\bin\Debug\DAL.dll.config
 C:\Users\ASUS\Desktop\Hospital Management System\BLL\bin\Debug\EntityFramework.xml
+C:\Users\ASUS\Desktop\Hospital Management System\BLL\bin\Debug\AutoMapper.dll
+C:\Users\ASUS\Desktop\Hospital Management System\BLL\bin\Debug\AutoMapper.xml

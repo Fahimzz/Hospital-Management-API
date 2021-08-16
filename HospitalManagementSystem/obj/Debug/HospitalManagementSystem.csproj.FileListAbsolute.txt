@@ -73,3 +73,8 @@ C:\Users\ASUS\Desktop\Hospital Management System\HospitalManagementSystem\bin\En
 C:\Users\ASUS\Desktop\Hospital Management System\HospitalManagementSystem\bin\EntityFramework.SqlServer.dll
 C:\Users\ASUS\Desktop\Hospital Management System\HospitalManagementSystem\bin\EntityFramework.xml
 C:\Users\ASUS\Desktop\Hospital Management System\HospitalManagementSystem\bin\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Desktop\Hospital Management System\HospitalManagementSystem\bin\DAL.dll
+C:\Users\ASUS\Desktop\Hospital Management System\HospitalManagementSystem\bin\AutoMapper.dll
+C:\Users\ASUS\Desktop\Hospital Management System\HospitalManagementSystem\bin\DAL.pdb
+C:\Users\ASUS\Desktop\Hospital Management System\HospitalManagementSystem\bin\DAL.dll.config
+C:\Users\ASUS\Desktop\Hospital Management System\HospitalManagementSystem\bin\AutoMapper.xml
