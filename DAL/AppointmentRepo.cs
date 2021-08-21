@@ -23,9 +23,9 @@ namespace DAL
             return contex.Appointments.Where(e => e.Status.Contains(Status)).ToList();
         }
 
-        public static List<Appointment> GetDoctor(string Doctor)
+        public static List<Appointment> GetDoctor(string Doctor, string Status)
         {
-            return contex.Appointments.Where(e => e.Doctors.Contains(Doctor)).ToList();
+            return contex.Appointments.Where(e => e.Doctors.Contains(Doctor) && e.Status.Contains(Status)).ToList();
         }
 
         public static List<Appointment> GetPatient(string Patient)
@@ -39,6 +39,13 @@ namespace DAL
         }
 
         public static void AddAccepted(Appointment l)
+        {
+            var old = contex.Appointments.FirstOrDefault(e => e.Patients == l.Patients && e.Doctors == l.Doctors && e.Id == l.Id);
+            contex.Entry(old).CurrentValues.SetValues(l);
+            contex.SaveChanges();
+            contex.SaveChanges();
+        }
+        public static void AddDone(Appointment l)
         {
             var old = contex.Appointments.FirstOrDefault(e => e.Patients == l.Patients && e.Doctors == l.Doctors && e.Id == l.Id);
             contex.Entry(old).CurrentValues.SetValues(l);

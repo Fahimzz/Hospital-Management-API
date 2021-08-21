@@ -54,9 +54,9 @@ namespace BLL
             return data;
         }
 
-        public static List<AppointmentModel> GetDoctor(string Doctor)
+        public static List<AppointmentModel> GetDoctor(string Doctor,string Status)
         {
-            var d = AppointmentRepo.GetDoctor(Doctor);
+            var d = AppointmentRepo.GetDoctor(Doctor,Status);
             List<AppointmentModel> data = new List<AppointmentModel>();
             foreach (var r in d)
             {
@@ -101,6 +101,11 @@ namespace BLL
         {
             var a = new Appointment { Patients = Patient, Doctors = Doctor, Status = "Accepted",Id=Id };
             AppointmentRepo.AddAccepted(a);
+        }
+        public static void AddDone(string Patient, string Doctor, int Id)
+        {
+            var a = new Appointment { Patients = Patient, Doctors = Doctor, Status = "Done", Id = Id };
+            AppointmentRepo.AddDone(a);
         }
     }
 }

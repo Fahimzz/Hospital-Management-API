@@ -51,7 +51,6 @@
     <Compile Include="LoginService.cs" />
     <Compile Include="PatientService.cs" />
     <Compile Include="ReceptionisServie.cs" />
-    <Compile Include="MapperConfig\AutoMapperSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -66,6 +65,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MapperConfig\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

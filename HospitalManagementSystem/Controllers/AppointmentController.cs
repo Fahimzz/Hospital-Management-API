@@ -30,11 +30,11 @@ namespace HospitalManagementSystem.Controllers
             return AppointmentService.GetAccepted(Status);
         }
 
-        [Route("api/Appointment/{Doctor}/GetDoctorWiseData")]
+        [Route("api/Appointment/{Doctor},{Status}/GetDoctorWiseData")]
 
-        public List<AppointmentModel> GetDoctor(string Doctor)
+        public List<AppointmentModel> GetDoctor(string Doctor, string Status)
         {
-            return AppointmentService.GetDoctor(Doctor);
+            return AppointmentService.GetDoctor(Doctor,Status);
         }
 
         [Route("api/Appointment/{Patient}/GetPatientWiseData")]
@@ -55,6 +55,12 @@ namespace HospitalManagementSystem.Controllers
         public void AppoinmentAccept(string Patient, string Doctor,int Id)
         {
             AppointmentService.AddAccepted(Patient, Doctor,Id);
+
+        }
+        [Route("api/Appointment/{Patient},{Doctor},{Id}/Done")]
+        public void AppoinmentDone(string Patient, string Doctor, int Id)
+        {
+            AppointmentService.AddDone(Patient, Doctor, Id);
 
         }
 

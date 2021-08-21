@@ -12,7 +12,11 @@ namespace BLL
         public static LoginModel GetLoginDetails(string username)
         {
             var d = LoginRepo.GetLoginDetails(username);
-
+            if(d== null)
+            {
+                return null;
+            }
+            else { 
             var m = new LoginModel()
             {
                 Username = d.Username,
@@ -22,7 +26,7 @@ namespace BLL
             };
 
             return m;
-
+            }
         }
 
         public static void DeleteUser(string id)

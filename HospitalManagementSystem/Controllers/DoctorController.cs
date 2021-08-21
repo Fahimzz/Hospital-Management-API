@@ -18,7 +18,7 @@ namespace HospitalManagementSystem.Controllers
             return DoctorService.GetAllDoctor();
         }
 
-        [Route("api/Doctor/{id}/GetDoctorById")]
+        [Route("api/Doctor/{id}")]
 
         public DoctorModel GetDoctorById(string id)
         {
